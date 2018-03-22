@@ -17,7 +17,7 @@
 		<div class="site-info">
 
 			<?php
-            
+
 				printf( esc_html__( 'Theme: %1$s by %2$s %3$s', 'codearchitect' ),
 										'codearchitect',
 										'<a href="http://codearchitect.lt/" rel="designer">Codearchitect</a>' ,
