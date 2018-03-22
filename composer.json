@@ -1,0 +1,16 @@
+{
+    "name": "CodeArchitect",
+    "description": "CodeArchitect Theme",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "CodeArchitect"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "autoload": {
+        "psr-4": {"CA\\": "./inc"}
+    }
+}
