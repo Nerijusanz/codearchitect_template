@@ -13,18 +13,20 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer container-fluid" role="contentinfo">
-		<div class="site-info">
+	<footer class="site-footer container-fluid">
+		<div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <?php
+                    printf('%s %s-%s -- %s',
+                        '&copy;',
+                        Date('Y'),
+                        get_bloginfo('name'),
+                        get_bloginfo('description')
+                    );
+                ?>
+            </div>
+		</div>
 
-			<?php
-
-				printf( esc_html__( 'Theme: %1$s by %2$s %3$s', 'codearchitect' ),
-										'codearchitect',
-										'<a href="http://codearchitect.lt/" rel="designer">Codearchitect</a>' ,
-										Date('Y')
-							);
-				?>
-		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

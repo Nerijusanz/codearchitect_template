@@ -15,11 +15,11 @@ $margins: ('mt': 'margin-top', 'mr': 'margin-right', 'mb': 'margin-bottom', 'ml'
 *  Media Queries
 *--------------------------*/
 $xs: 480px;
-$sm: 600px;
-$md: 800px;
-$lg: 1190px;
-$xl: 1440px;
-$xxl: 1700px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
 
 $breakpoints: ('xs': $xs, 'sm': $sm, 'md': $md, 'lg': $lg, 'xl': $xl);
 

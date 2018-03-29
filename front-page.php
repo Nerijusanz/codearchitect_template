@@ -10,7 +10,10 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package codearchitect
+ *
+ * Template Name: Front Page
  */
+
 
 //make check if codearchitect plugin is activated; if not stop load theme;
 if ( !class_exists( 'CA_Inc\\Init' ) )  //make check if theme can see init file
@@ -18,7 +21,7 @@ if ( !class_exists( 'CA_Inc\\Init' ) )  //make check if theme can see init file
 
 get_header(); ?>
 
-<div class="container">
+<div class="container front-page">
 
 	<div class="row">
 
@@ -27,32 +30,7 @@ get_header(); ?>
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main" role="main">
 
-					<?php
-
-					if ( have_posts() ) :
-
-						if ( is_home() && ! is_front_page() ) : ?>
-							<header>
-								<h1 class="page-title"><?php single_post_title(); ?></h1>
-							</header>
-
-						<?php
-						endif;
-
-						/* Start the Loop */
-						while ( have_posts() ) : the_post();
-
-							get_template_part( 'views/content', get_post_format() );
-
-						endwhile;
-
-						the_posts_navigation();
-
-					else :
-
-						get_template_part( 'views/content', 'none' );
-
-					endif; ?>
+                    <h1>FRONT-PAGE</h1>
 
 				</main><!-- #main -->
 			</div><!-- #primary -->

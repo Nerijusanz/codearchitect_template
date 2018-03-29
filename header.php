@@ -43,18 +43,68 @@ session_start();
 
 		<header class="site-header" role="banner">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <div class="menu-toggle"></div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="main-navigation">
-                        <?php CA_Inc\site_core\menu\MenuInit::wp_bootstrap_nav_walker();?>
-                    </div><!--.main-navigation-->
-                </div>
-            </nav>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="logo">
+                            <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+
+                        <div class="main-navigation">
+
+                            <div class="main-navigation-content"><?php CA_Inc\site_core\menu\MenuInit::wp_bootstrap_nav_walker();?></div>
+
+                            <div class="main-navigation-footer">
+
+                                <div class="main-navigation-logo">
+                                    <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
+                                </div>
+
+                                <div class="menu-toggle-close"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div><!--col-->
+
+                    <div class="col-xs-12 col-sm-3">
+
+                        <div class="top-menu">
+
+                            <ul>
+                                <li>
+
+                                    <div class="dropdown show languages">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="glyphicon icon-flag-lt"></i><span class="caret"></span>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-caret" aria-labelledby="dropdownMenuLink">
+                                            <ul>
+                                                <li><a class="dropdown-item" href="/" target="_self"><i class="glyphicon icon-flag-lt"></i>Lietuvių</a></li>
+                                                <li><a class="dropdown-item" href="/en/" target="_self"><i class="glyphicon icon-flag-en"></i>English</a></li>
+                                                <li><a class="dropdown-item" href="/en/" target="_self"><i class="glyphicon icon-flag-ru"></i>Русский</a></li>
+                                            </ul>
+                                        </div>
+                                    </div><!--.languages-->
+
+                                </li>
+
+                            </ul>
+
+                        </div><!--top-menu-->
+                    </div>
+
+                </div><!--row-->
+            </div><!--container-->
+
 
 	    </header><!-- #masthead -->
 

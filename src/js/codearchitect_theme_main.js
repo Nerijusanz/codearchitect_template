@@ -10,3 +10,12 @@ import 'bootstrap-sass/assets/javascripts/bootstrap';
 
 window.$ = window.jQuery = require("jquery");
 
+$('.menu-toggle').on('click',function(){
+
+    $('.main-navigation').toggle();
+
+});
+
+$('.menu-toggle-close').on('click',function(){
+    $('.main-navigation').toggle();
+});

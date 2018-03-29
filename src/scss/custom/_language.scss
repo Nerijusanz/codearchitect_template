@@ -1,0 +1,115 @@
+/******************language**************/
+.icon-flag{
+  background-image: url("../images/flags_matrix.png");
+  background-repeat: no-repeat!important;
+  width: 16px!important;
+  height: 11px!important;
+  display: block;
+}
+
+.icon-flag-lt{
+  @extend .icon-flag;
+  background-position:-192px -220px!important;
+}
+
+.icon-flag-en{
+  @extend .icon-flag;
+  background-position: -80px -154px!important;
+}
+
+.icon-flag-ru{
+  @extend .icon-flag;
+  background-position:-288px -231px!important;
+}
+
+
+.languages {
+
+  .dropdown-toggle {
+
+    .glyphicon {
+      display: inline-block;
+    }
+
+    .caret {
+      //flag small triangle caret
+      position: relative;
+      top: 2px;
+      color: #333;
+    }
+    //.caret
+
+  }
+  //.dropdown-toggle
+
+  .dropdown-menu {
+    top: 28px;
+    left: -136px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0;
+
+    ul {
+      margin: 0;
+      padding: 2px 0;
+      list-style: none;
+    }
+
+    .dropdown-item {
+      display: block;
+      padding: 0 8px;
+      color: #333;
+      font-weight: 400;
+      font-size: 13px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #4f99c6;
+        color: #fff;
+      }
+
+      > i {
+        display: inline-block;
+        margin-right: 4px;
+      }
+
+    }
+    //.dropdown-item
+
+  }
+  //.dropdown-menu
+
+  .dropdown-caret {
+    //small corner triangle
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+
+    }
+
+    &:before {
+      //1px bigger size tringle - layer bottom
+      border-bottom: 7px solid rgba(0, 0, 0, .2);
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      top: -6px;
+      right: 3px;
+    }
+
+    &:after {
+      //1px smaller triangle - layer top
+      border-bottom: 6px solid #fff;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      top: -5px;
+      right: 4px;
+    }
+
+  }
+  //.dropdown-caret
+
+}//.languages
+/******************end language************/

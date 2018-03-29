@@ -38,12 +38,19 @@
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-
+@import 'components/main';
 @import 'components/header';
+@import 'components/content';
 @import 'components/sidebar';
 @import 'components/footer';
 
 /*--------------------------------------------------------------
 # Pages
 --------------------------------------------------------------*/
-/*@import 'pages/home';*/
+@import 'pages/home';
+@import 'pages/contact';
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+@import 'custom/language';

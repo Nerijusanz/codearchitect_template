@@ -1,0 +1,41 @@
+.contact-page{
+
+  .title{
+    font-weight: 300;
+    font-size: 3.2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form{
+
+    p{
+      margin-top: 10px;
+      line-height: 26px;
+      font-size: 1.3rem;
+      color:#393939;
+    }
+
+    p span{
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+
+    p a{
+      text-decoration: underline;
+      color: #3370b7;
+    }
+
+  }//.contact-form
+
+
+  .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+
+}
