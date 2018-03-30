@@ -31,15 +31,14 @@ $black: #000;
 $light-grey: #f0f0f0;
 
 // custom colours
-
 $colours: ('white': $white, 'black': $black, 'light-grey': $light-grey);
 
 /*-------------------------
 *  Typography
 *--------------------------*/
 $base-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-$base-fs: 18px;
+$font-color: #333;
+$base-fs: 10px;
 
 /*-------------------------
 *  Animations
@@ -52,3 +51,4 @@ $swift: cubic-bezier(0.4, 0, 0.2, 1);
 $ease: ease;
 
 $transition-default: all $time $ease;
+

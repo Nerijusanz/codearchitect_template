@@ -1,4 +1,18 @@
-footer {
-	position: relative;
-    top:60px!important;
+.site-footer {
+  padding: 10px 15px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 35px;
+  border-top: 1px solid #e5e5e5;
+  line-height: 24px;
+  font-size: 1.3rem;
+  text-align: center;
+
+  &.footer-fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

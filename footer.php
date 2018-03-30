@@ -11,23 +11,23 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div><!-- #content .site-content -->
 
-	<footer class="site-footer container-fluid">
-		<div class="row">
+	<footer class="site-footer">
+        <div class="row">
             <div class="col-xs-12 col-sm-12">
                 <?php
-                    printf('%s %s-%s -- %s',
-                        '&copy;',
-                        Date('Y'),
-                        get_bloginfo('name'),
-                        get_bloginfo('description')
-                    );
+                printf('%s %s-%s -- %s',
+                    '&copy;',
+                    Date('Y'),
+                    get_bloginfo('name'),
+                    __(get_bloginfo('description'),'codearchitect')
+                );
                 ?>
             </div>
-		</div>
+        </div>
 
-	</footer><!-- #colophon -->
+	</footer>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
