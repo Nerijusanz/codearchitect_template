@@ -1,12 +1,15 @@
+$site-footer-height:35px;
+$site-footer-border-color:#e5e5e5;
+$site-footer-font-size:1.3rem;
+
 .site-footer {
-  padding: 10px 15px;
+  padding:5px 0;
   position: relative;
   display: block;
   width: 100%;
-  height: 35px;
-  border-top: 1px solid #e5e5e5;
-  line-height: 24px;
-  font-size: 1.3rem;
+  height: $site-footer-height;
+  border-top: 1px solid $site-footer-border-color;
+  font-size: $site-footer-font-size;
   text-align: center;
 
   &.footer-fixed {

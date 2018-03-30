@@ -14,18 +14,16 @@
 	</div><!-- #content .site-content -->
 
 	<footer class="site-footer">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
+
                 <?php
-                printf('%s %s-%s -- %s',
+                $footer_txt=sprintf('%s %s-%s -- %s',
                     '&copy;',
                     Date('Y'),
                     get_bloginfo('name'),
                     __(get_bloginfo('description'),'codearchitect')
-                );
-                ?>
-            </div>
-        </div>
+                );?>
+
+                <p><?php echo $footer_txt; ?></p>
 
 	</footer>
 </div><!-- #page -->

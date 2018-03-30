@@ -1,6 +1,7 @@
-header {
-	position: relative;
-}
+$site-header-mobile-height:35px;
+$site-header-height:60px;
+$site-header-bg-color:$white;
+$site-header-border-color:#e6e6e6;
 
 .site-header{
   position: relative;  @media (min-width:$md) {position: fixed; }
@@ -8,10 +9,10 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  height: 35px; @media (min-width:$md) {height: 60px;}
-  background-color:#fff;
+  height: $site-header-mobile-height; @media (min-width:$md) {height: $site-header-height;}
+  background-color:$site-header-bg-color;
   box-shadow:0 -5px 15px 5px rgba(0,0,0,.1);
-  border-bottom:1px solid #e6e6e6;
+  border-bottom:1px solid $site-header-border-color;
   z-index: 1000;
 
 
