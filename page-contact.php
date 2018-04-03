@@ -41,9 +41,7 @@ get_header(); ?>
                                 </div>
 
                                 <div class="col-xs-12 col-sm-6">
-                                    <div class="gmap" style="width:100%; height: 300px; border:1px solid red;">
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17888.723600534722!2d21.827534661369665!3d55.91313201014668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e50e054c96d5f3%3A0x400d18c70e9db90!2zUGx1bmfElw!5e0!3m2!1slt!2slt!4v1522414806640" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                    </div>
+
                                 </div>
 
                             </div><!--.row-->

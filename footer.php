@@ -13,7 +13,7 @@
 
 	</div><!-- #content .site-content -->
 
-	<footer class="site-footer">
+	<footer class="site-footer ">
 
                 <?php
                 $footer_txt=sprintf('%s %s-%s -- %s',
