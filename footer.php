@@ -13,22 +13,24 @@
 
 	</div><!-- #content .site-content -->
 
-	<footer class="site-footer ">
+    <footer class="site-footer">
 
-                <?php
-                $footer_txt=sprintf('%s %s-%s -- %s',
-                    '&copy;',
-                    Date('Y'),
-                    get_bloginfo('name'),
-                    __(get_bloginfo('description'),'codearchitect')
-                );?>
+        <?php
+        $footer_txt=sprintf('%s %s-%s -- %s',
+            '&copy;',
+            Date('Y'),
+            get_bloginfo('name'),
+            __(get_bloginfo('description'),'codearchitect')
+        );?>
 
-                <p><?php echo $footer_txt; ?></p>
+        <p><?php echo $footer_txt; ?></p>
 
-	</footer>
+    </footer>
+
+    <?php wp_footer(); ?>
+
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
 
 </body>
 </html>

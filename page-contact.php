@@ -41,10 +41,22 @@ get_header(); ?>
                                 </div>
 
                                 <div class="col-xs-12 col-sm-6">
-
+                                    column-2
                                 </div>
 
                             </div><!--.row-->
+
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                    <?php
+                                    while ( have_posts() ) : the_post();
+
+                                        the_content();
+
+                                    endwhile;
+                                    ?>
+                                </div>
+                            </div>
 
                     </main><!-- #main -->
                 </div><!-- #primary -->

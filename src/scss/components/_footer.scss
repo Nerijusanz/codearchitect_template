@@ -2,7 +2,9 @@ $site-footer-height:35px;
 $site-footer-border-color:#e5e5e5;
 $site-footer-font-size:1.3rem;
 
+
 .site-footer {
+  margin-top:20px; @media (min-width: $md){margin-top:80px;}
   padding:5px 0;
   position: relative;
   display:none;
@@ -12,10 +14,12 @@ $site-footer-font-size:1.3rem;
   font-size: $site-footer-font-size;
   text-align: center;
 
+
   &.footer-fixed {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
   }
+
 }
