@@ -1,8 +1,8 @@
 /****main-navigation params************/
 $main-navigation-bg-color:$white;
-$main-navigation-font-color:#337ab7;
-$main-navigation-font-weight:600;
-$main-navigation-font-size:1.6rem;
+$main-navigation-font-color:#333;//#337ab7;
+$main-navigation-font-weight:300;
+$main-navigation-font-size:1.4rem;
 $main-navigation-mobile-font-size:2.6rem; //xs sm
 $main-navigation-menu-item-hover-focus-bg-color:$white;
 
@@ -44,7 +44,7 @@ $main-navigation-menu-item-hover-focus-bg-color:$white;
 
   .navbar-nav li>a{
     text-align: center;
-    font-weight: $main-navigation-font-weight;
+    font-weight: $main-navigation-font-weight;  @media (min-width: $md) { font-weight: 600; }
     color:$main-navigation-font-color;
     font-size: $main-navigation-mobile-font-size;  @media (min-width: $md) { font-size: $main-navigation-font-size; }
     text-transform: uppercase;

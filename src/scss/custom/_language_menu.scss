@@ -54,12 +54,15 @@ $language-menu-item-hover-focus-active-font-color:$white;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 0;
 
+
     ul {
       margin: 0;
       padding: 2px 0;
       list-style: none;
 
-      >li{display: block;}
+      > li {
+        display: block;
+      }
 
     }
 
@@ -69,6 +72,8 @@ $language-menu-item-hover-focus-active-font-color:$white;
       color: $font-color;
       font-weight: $language-menu-font-weight;
       font-size: $language-menu-font-size;
+      text-transform: uppercase;
+      font-size: 1rem;
 
       &:hover,
       &:focus,
@@ -98,7 +103,8 @@ $language-menu-item-hover-focus-active-font-color:$white;
       position: absolute;
 
     }
-
+    /*
+    //small triangle element
     &:before {
       //1px bigger size tringle - layer bottom
       border-bottom: 7px solid rgba(0, 0, 0, .2);
@@ -115,7 +121,7 @@ $language-menu-item-hover-focus-active-font-color:$white;
       border-right: 6px solid transparent;
       top: -5px;
       right: 4px;
-    }
+    }*/
 
   }
   //.dropdown-caret
