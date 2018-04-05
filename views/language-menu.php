@@ -1,9 +1,3 @@
-<?php
-//  language are inserted into:
-//                  .site-header > .top-nav;
-//                  .site-navigation .navbar-header
-?>
-
 <div class="dropdown show language-menu">
     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <i class="glyphicon icon-flag-lt"></i><span class="caret"></span>
