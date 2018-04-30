@@ -24,36 +24,36 @@ get_header(); ?>
 
                             <div class="row">
 
-                                <div class="col-xs-12 col-sm-6">
-
-                                    <div class="contact-form">
-                                        <p><strong><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_name');?></strong></p>
-                                        <p><span><?php _e('įmones kodas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_code');?></p>
-                                        <p><span><?php _e('PVM kodas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_pvm_code');?></p>
-                                        <p><span><?php _e('adresas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_address');?></p>
-                                        <p><span><?php _e('telefonas/faksas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_phone_fax');?></p>
-                                        <p><span><?php _e('mobilus:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_mobile');?></p>
-                                        <?php $email=CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_email');?>
-                                        <p><span><?php _e('el. paštas:','codearchitect');?></span><a href="mailto:<?php echo $email?>"><?php echo $email; ?></a></p>
-                                        <p><span><?php _e('darbo laikas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\ContactSetup::get_contact_module_item('company_working_hours');?></p>
-                                    </div>
-
+                                <div class="col-xs-12 col-sm-12">
+                                    <?php echo CA_Inc\modules\gmap\Setup::gmap_front_template(); ?>
                                 </div>
 
-                                <div class="col-xs-12 col-sm-6">
-                                    column-2
+                                <div class="col-xs-12 col-sm-12">
+
+                                    <div class="contact-form">
+                                        <p><strong><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_name');?></strong></p>
+                                        <p><span><?php _e('įmones kodas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_code');?></p>
+                                        <p><span><?php _e('PVM kodas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_pvm_code');?></p>
+                                        <p><span><?php _e('adresas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_address');?></p>
+                                        <p><span><?php _e('telefonas/faksas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_phone_fax');?></p>
+                                        <p><span><?php _e('mobilus:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_mobile');?></p>
+                                        <?php $email=CA_Inc\modules\contact\Setup::get_contact_module_item('company_email');?>
+                                        <p><span><?php _e('el. paštas:','codearchitect');?></span><a href="mailto:<?php echo $email?>"><?php echo $email; ?></a></p>
+                                        <p><span><?php _e('darbo laikas:','codearchitect');?></span><?php echo CA_Inc\modules\contact\Setup::get_contact_module_item('company_working_hours');?></p>
+                                    </div>
+
                                 </div>
 
                             </div><!--.row-->
 
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                                <div class="col-xs-12 col-sm-12">
                                     <?php
-                                    while ( have_posts() ) : the_post();
+                                        while ( have_posts() ) : the_post();
 
-                                        the_content();
+                                            the_content();
 
-                                    endwhile;
+                                        endwhile;
                                     ?>
                                 </div>
                             </div>
@@ -68,5 +68,4 @@ get_header(); ?>
 
     </div><!-- .container -->
 
-<?php
-get_footer();
+<?php get_footer();

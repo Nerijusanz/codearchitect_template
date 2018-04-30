@@ -6,7 +6,7 @@
     <div id="page" class="site">
         <?php
             printf('<h2>%s</h2>',
-                __('Sorry, this site is temporary shutdown',PLUGIN_DOMAIN)
+                __('Sorry, site is temporary shutdown',PLUGIN_DOMAIN)
             );
         ?>
 

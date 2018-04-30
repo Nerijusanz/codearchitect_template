@@ -28,33 +28,33 @@ var browserSync  = require( 'browser-sync' ).create();
 var reload       = browserSync.reload;
 
 // Project related variables
-//var exposeConfig = { expose: { jquery: 'jQuery' } };
 
-
-var projectURL   = 'http://codearchitect';
+var projectURL   = 'http://www.codearchitect.lt';
 
 var npm = './node_modules/';
-//bootsrap library
-var bootstrapFontsSRC  = npm + 'bootstrap-sass/assets/fonts/**';
-var fontawesomeFontsSRC = npm + 'font-awesome/fonts/**';
 
-var styleSrcFile    = 'codearchitect_theme_style.scss';
+
+//css
+var styleSrcFile    = 'style.scss';
 var styleSRC     = 'src/scss/' + styleSrcFile;
 var styleURL     = './assets/css/';
 var mapURL       = './';
-
-var jsSrcFile    = 'codearchitect_theme_main.js';
-var jsFrontFile  = 'codearchitect_theme_main.min.js'; //added prefix min.js
+//js
+var jsSrcFile    = 'main.js';
 var jsSRC        = 'src/js/';
 var jsURL        = './assets/js/';
 var jsFiles      = [ jsSrcFile ];
-
+//img
 var imgSRC       = 'src/images/**/*';
 var imgURL       = 'assets/images/';
 
+//fonts
+var bootstrapFontsSRC  = npm + 'bootstrap-sass/assets/fonts/**';
+var fontawesomeFontsSRC = npm + 'font-awesome/fonts/**';
 var fontsSRC     = 'src/fonts/**/*';
 var fontsURL     = 'assets/fonts/';
 
+//src files
 var styleWatch   = 'src/scss/**/*.scss';
 var jsWatch      = 'src/scripts/**/*.js';
 var imgWatch     = 'src/images/**/*.*';
@@ -90,6 +90,7 @@ gulp.task( 'styles', function() {
         .pipe( browserSync.stream() );
 });
 
+
 gulp.task( 'js', function() {
     jsFiles.map( function( entry ) {
         return browserify({
@@ -111,16 +112,15 @@ gulp.task( 'js', function() {
     });
 });
 
+
 gulp.task( 'images', function() {
     triggerPlumber( imgSRC, imgURL );
 });
 
 gulp.task( 'fonts', function() {
 
-    gulp.src([
-        bootstrapFontsSRC,
-        fontawesomeFontsSRC
-    ]).pipe(plumber())
+    gulp.src([bootstrapFontsSRC,fontawesomeFontsSRC])
+        .pipe(plumber())
         .pipe(gulp.dest( fontsURL ));
 
     triggerPlumber( fontsSRC, fontsURL );
@@ -133,7 +133,8 @@ function triggerPlumber( src, url ) {
 }
 
 gulp.task( 'default', ['styles', 'js', 'images', 'fonts'], function() {
-    gulp.src( jsURL + jsFrontFile )
+
+    gulp.src( jsURL + 'main.min.js' )
         .pipe( notify({ message: 'Assets Compiled!' }) );
 });
 
@@ -143,6 +144,6 @@ gulp.task( 'watch', ['default', 'browser-sync'], function() {
     gulp.watch( jsWatch, [ 'js', reload ] );
     gulp.watch( imgWatch, [ 'images' ] );
     gulp.watch( fontsWatch, [ 'fonts' ] );
-    gulp.src( jsURL + jsFrontFile )
+    gulp.src( jsURL + 'main.min.js' )
         .pipe( notify({ message: 'Gulp task watch activated' }) );
 });

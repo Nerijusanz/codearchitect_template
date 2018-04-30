@@ -31,7 +31,7 @@ session_start();
 
 <?php
 
-if(CA_Inc\modules\settings\SettingsSetup::make_check_site_shutdown_status() == true){   //turn off site;
+if(CA_Inc\modules\settings\Setup::make_check_site_shutdown_status() == true){   //turn off site;
 
     get_template_part( 'views/content', 'site-shutdown' );
     exit;
@@ -43,11 +43,11 @@ if(CA_Inc\modules\settings\SettingsSetup::make_check_site_shutdown_status() == t
 
     <header class="site-header" role="banner">
 
-        <div class="container">
+        <div class="container container-fluid">
 
             <div class="row">
 
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-2">
 
                     <div class="logo">
                         <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
@@ -57,7 +57,7 @@ if(CA_Inc\modules\settings\SettingsSetup::make_check_site_shutdown_status() == t
 
                 <div class="main-navigation-menu-toggle"></div>
 
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-8">
 
                     <div class="main-navigation">
 
@@ -79,6 +79,7 @@ if(CA_Inc\modules\settings\SettingsSetup::make_check_site_shutdown_status() == t
 
                             <div class="main-navigation-logo">
                                 <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
+
                             </div>
 
                         </div><!--.main-navigation-footer-->
@@ -87,7 +88,7 @@ if(CA_Inc\modules\settings\SettingsSetup::make_check_site_shutdown_status() == t
 
                 </div><!--.col-->
 
-                <div class="col-xs-12 col-md-3">
+                <div class="col-xs-12 col-md-2">
 
                     <div class="top-menu">
 
