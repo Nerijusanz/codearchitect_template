@@ -18,7 +18,7 @@ get_header(); ?>
 
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12">
-                                    <h1 class="title"><?php _e(get_the_title(),'codearchitect');?></h1>
+                                    <h1 class="title"><?php _e(get_the_title(),TEMPLATE_DOMAIN);?></h1>
                                 </div>
                             </div><!--.row-->
 

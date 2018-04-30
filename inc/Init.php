@@ -9,9 +9,15 @@ class Init {
 
     public static function get_services()
     {
+
         return [
+            setup\Settings::class,
             setup\Setup::class,
             setup\Enqueue::class,
+            setup\Mobile_detect::class,
+            setup\Body_class_setup::class,
+            menu\MenuInit::class,
+            shortcodes\ShortcodeInit::class
 
         ];
     }

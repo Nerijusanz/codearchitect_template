@@ -31,11 +31,11 @@ session_start();
 
 <?php
 
-if(CA_Inc\modules\settings\Setup::make_check_site_shutdown_status() == true){   //turn off site;
+    if(CA_Inc\modules\settings\Setup::make_check_site_shutdown_status() == true){   //turn off site;
 
-    get_template_part( 'views/content', 'site-shutdown' );
-    exit;
-}
+        get_template_part( 'views/content', 'site-shutdown' );
+        exit;
+    }
 
 ?>
 
@@ -50,7 +50,7 @@ if(CA_Inc\modules\settings\Setup::make_check_site_shutdown_status() == true){   
                 <div class="col-xs-12 col-md-2">
 
                     <div class="logo">
-                        <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
+                        <a href="<?php echo get_site_url();?>"><img src="<?php echo CA\setup\Settings::$login_logo_url;?>"/></a>
                     </div>
 
                 </div>
@@ -73,12 +73,12 @@ if(CA_Inc\modules\settings\Setup::make_check_site_shutdown_status() == true){   
 
                         </div><!--.main-navigation-top-->
 
-                        <div class="main-navigation-content"><?php CA_Inc\site_core\menu\MenuInit::wp_bootstrap_nav_walker();?></div>
+                        <div class="main-navigation-content"><?php CA\menu\MenuInit::wp_bootstrap_nav_walker();?></div>
 
                         <div class="main-navigation-footer">
 
                             <div class="main-navigation-logo">
-                                <a href="<?php echo get_site_url();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/codearchitect-logo.png';?>"/></a>
+                                <a href="<?php echo get_site_url();?>"><img src="<?php echo CA\setup\Settings::$login_logo_url;?>"/></a>
 
                             </div>
 
